@@ -1,5 +1,5 @@
 export default async function handler(req, res) {
-  const { code, error, state } = req.query;
+  const { code, error } = req.query;
 
   if (error) {
     return res.status(400).json({ error: 'Spotify authorization failed', message: error });
