@@ -49,17 +49,17 @@ const PhotoGallery = () => {
       <h3 className="font-heading text-lg text-[#2F4156] mb-4">Gallery</h3>
 
       <div className="relative">
-        <div className="flex justify-center">
+        <div className="flex justify-center h-[280px] items-center">
           <div className="bg-[#F5EFEB] rounded p-2 inline-block">
             <img
               src={slides[currentSlide].image}
               alt={slides[currentSlide].title}
-              className="max-w-full h-[240px] object-cover rounded"
+              className="max-h-[240px] object-contain rounded"
             />
           </div>
         </div>
 
-        <div className="mt-4 text-left">
+        <div className="mt-4 text-left h-[80px]">
           <h4 className="font-heading text-lg text-[#2F4156] mb-2">
             {slides[currentSlide].title}
           </h4>

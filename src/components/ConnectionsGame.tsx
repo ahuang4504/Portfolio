@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 interface GameData {
   [category: string]: string[];
@@ -34,11 +34,7 @@ const ConnectionsGame = () => {
   const [gameWon, setGameWon] = useState(false);
   const [gameOver, setGameOver] = useState(false);
 
-  useEffect(() => {
-    resetGame();
-  }, []);
-
-  const resetGame = () => {
+  const resetGame = useCallback(() => {
     const items: string[] = [];
     const catMap: { [key: string]: string } = {};
 
@@ -60,7 +56,11 @@ const ConnectionsGame = () => {
     setGameMessage("");
     setGameWon(false);
     setGameOver(false);
-  };
+  }, []);
+
+  useEffect(() => {
+    resetGame();
+  }, [resetGame]);
 
   const toggleItemSelection = (item: string) => {
     if (selectedItems.includes(item)) {

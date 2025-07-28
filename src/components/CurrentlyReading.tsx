@@ -3,7 +3,7 @@ const CurrentlyReading = () => {
     <div className="box-3d p-6">
       <div className="text-left mb-6">
         <h2 className="font-heading text-3xl text-[#2F4156]">
-          What I'm Reading
+          What I&apos;m Reading
         </h2>
       </div>
       <div className="space-y-3">

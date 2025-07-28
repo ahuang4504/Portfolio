@@ -22,7 +22,7 @@ export default function About() {
                 </h2>
               </div>
               <p className="text-[#666666] leading-relaxed mb-3">
-                I started coding in high school and I've been hooked ever since!
+                I started coding in high school and I&apos;ve been hooked ever since!
                 What really keeps me going is just wanting to understand how
                 everything works. I have a love-hate relationship with getting
                 into the nitty-gritty of computers because it frustrates me to
@@ -30,9 +30,9 @@ export default function About() {
                 Compilers were exactly my kind of thing.
               </p>
               <p className="text-[#666666] leading-relaxed">
-                I've also picked up experience in varying areas along the way. I
+                I&apos;ve also picked up experience in varying areas along the way. I
                 minored in Data Science and worked as a research assistant as an
-                undergrad and now I'm looking to bring all of that together as I
+                undergrad and now I&apos;m looking to bring all of that together as I
                 focus on full-stack development.
               </p>
             </div>
@@ -71,12 +71,12 @@ export default function About() {
               <p className="text-[#666666] leading-relaxed mb-3">
                 Growing up, I played almost every sport imaginable, so staying
                 active has always been central to my life. My family loves
-                hiking which fostered my appreciation for the outdoors. It's
+                hiking which fostered my appreciation for the outdoors. It&apos;s
                 been a lifelong dream of mine to hike the mountains of the West
                 Coast!
               </p>
               <p className="text-[#666666] leading-relaxed mb-4">
-                When I'm not on the trails, I love playing a variety of sports.
+                When I&apos;m not on the trails, I love playing a variety of sports.
                 My current rotation include:
               </p>
               <div className="mb-4 space-y-1 ml-4">
@@ -91,7 +91,7 @@ export default function About() {
                 <p className="text-[#666666] text-sm">{">"} Snowboarding</p>
               </div>
               <p className="text-[#666666] leading-relaxed">
-                When I get more free time, I'm also planning on challenging
+                When I get more free time, I&apos;m also planning on challenging
                 myself by training for either a marathon or triathlon with my
                 brother as well!
               </p>
@@ -110,8 +110,8 @@ export default function About() {
                 genuinely enjoying these hobbies on my own terms. Currently, I'm
                 learning Nocturne Op. 9 No. 2 by Chopin on the piano, playing
                 fingerstyle on my guitar, and drawing houseplants! */}
-                I'm also now picking up old hobbies that I didn't fully
-                appreciate as a kid. Currently, I'm learning Nocturne Op. 9 No.
+                I&apos;m also now picking up old hobbies that I didn&apos;t fully
+                appreciate as a kid. Currently, I&apos;m learning Nocturne Op. 9 No.
                 2 by Chopin on the piano, playing fingerstyle on my guitar, and
                 drawing houseplants!
               </p>

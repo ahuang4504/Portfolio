@@ -10,6 +10,8 @@ const openSans = Open_Sans({
   weight: ["300", "400", "500", "600"],
 });
 
+// Note: Vidaloka font will be loaded via CSS @import in globals.css
+
 export const metadata: Metadata = {
   title: "Albert Huang - Portfolio",
   description: "Software Engineer & Problem Solver",
@@ -29,12 +31,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/succulent.ico" sizes="any" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Vidaloka:wght@400&family=Open+Sans:wght@300;400;500;600&display=swap"
-          rel="stylesheet"
-        />
       </head>
       <body className={`${openSans.variable} antialiased min-h-screen flex flex-col`}>
         <Navigation />

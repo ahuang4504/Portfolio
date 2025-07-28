@@ -12,7 +12,7 @@ const Hero = () => {
             </p>
             <div className="space-y-4">
               <p className="text-base text-[#666666] leading-relaxed">
-                Hey I'm Albert, a student currently at the University of
+                Hey I&apos;m Albert, a student currently at the University of
                 Virginia and an{" "}
                 <span className="font-medium">
                   aspiring full-stack software engineer!
@@ -21,7 +21,7 @@ const Hero = () => {
 
               <p className="text-base text-[#666666] leading-relaxed">
                 I work across the stack, from backend systems to frontend
-                interfaces, and I'm always looking for new things to learn and
+                interfaces, and I&apos;m always looking for new things to learn and
                 ways to make things{" "}
                 <span className="font-medium">
                   cleaner, smarter, and more fun to use.
@@ -29,12 +29,12 @@ const Hero = () => {
               </p>
 
               <p className="text-base text-[#666666] leading-relaxed">
-                When I'm not coding, you will probably find me out playing
+                When I&apos;m not coding, you will probably find me out playing
                 volleyball or watching shows with friends.
               </p>
 
               <p className="text-base text-[#666666] font-medium leading-relaxed">
-                Check out my projects and reach out if you'd like to connect!
+                Check out my projects and reach out if you&apos;d like to connect!
               </p>
             </div>
           </div>
