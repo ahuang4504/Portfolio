@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Vidaloka:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap");
+@import "tailwindcss";
+
+:root {
+  --color-beige: #f5efeb;
+  --color-navy: #2f4156;
+  --color-beige-dark: #e8e0da;
+  --color-navy-light: #3d5068;
+  --color-text: #333333;
+  --color-text-light: #666666;
+  --color-white: #ffffff;
+  --color-brown-dark: #5d4e37;
+  --font-heading: "Vidaloka", serif;
+  --font-body: "Open Sans", sans-serif;
+  --background: var(--color-beige);
+  --foreground: var(--color-text);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-geist-mono);
+  --color-beige: #f5efeb;
+  --color-navy: #2f4156;
+  --color-beige-dark: #e8e0da;
+  --color-navy-light: #3d5068;
+  --color-brown-dark: #5d4e37;
+}
+
+body {
+  background: var(--color-beige);
+  color: var(--foreground);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  color: var(--color-navy);
+  text-align: left;
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--color-navy);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.box-3d {
+  position: relative;
+  background: var(--color-white);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.box-3d::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.05;
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #e5e5f7 10px
+    ),
+    repeating-linear-gradient(#444cf755, #444cf7);
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+* {
+  background-image: none;
+}
+
+.text-link {
+  color: var(--color-navy);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.text-link:hover {
+  border-bottom-color: var(--color-navy);
+}
+
+.condensed-section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.condensed-margin {
+  margin-bottom: 1.5rem;
+}
+
+.condensed-spacing {
+  margin-bottom: 1rem;
+}
