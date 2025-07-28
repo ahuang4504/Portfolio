@@ -4,6 +4,17 @@ export default async function handler(req, res) {
       ? `https://${process.env.VERCEL_URL}` 
       : process.env.NEXTAUTH_URL || 'http://localhost:3000';
     const tokenResponse = await fetch(`${baseUrl}/api/spotify/token`);
+    
+    if (!tokenResponse.ok) {
+      const errorText = await tokenResponse.text();
+      console.error('Token endpoint error:', tokenResponse.status, errorText);
+      return res.status(tokenResponse.status).json({ 
+        error: 'Token endpoint failed', 
+        status: tokenResponse.status,
+        message: errorText 
+      });
+    }
+    
     const tokenData = await tokenResponse.json();
     
     if (!tokenData.access_token) {
