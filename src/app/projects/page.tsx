@@ -7,6 +7,16 @@ export default function Projects() {
       tech: ["React.js", "TypeScript", "Supabase", "Chrome Extension API"],
       github: "https://github.com/ahuang4504/GPTracker",
       demo: null,
+      demoStatus: "Chrome store submission in progress",
+      featured: true,
+    },
+    {
+      title: "Portfolio Website",
+      description:
+        "A modern, responsive portfolio about me and my technical projects! Features dynamic content including real-time Spotify integration, interactive photo gallery, and custom Connections game. Built with performance optimization and mobile-first responsive design principles.",
+      tech: ["Next.js", "TypeScript", "Tailwind CSS", "Spotify API", "Vercel"],
+      github: "https://github.com/ahuang4504/Portfolio",
+      demo: "https://www.alberthuang.xyz",
       featured: true,
     },
     {
@@ -167,6 +177,11 @@ export default function Projects() {
                           Live Demo →
                         </a>
                       )}
+                      {project.demoStatus && (
+                        <span className="text-[#666666] text-sm italic">
+                          {project.demoStatus}
+                        </span>
+                      )}
                     </div>
                   </div>
 
@@ -215,6 +230,12 @@ export default function Projects() {
                           PeerCycle
                         </span>
                       </div>
+                    ) : project.title === "Portfolio Website" ? (
+                      <img
+                        src="/website.svg"
+                        alt="Website"
+                        className="w-40 h-40 object-contain"
+                      />
                     ) : (
                       <div className="text-[#2F4156] text-4xl font-heading">
                         {project.title.charAt(0)}
