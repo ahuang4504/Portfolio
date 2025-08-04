@@ -49,7 +49,7 @@ const Timeline = () => {
       company: "UVA CS Department",
       date: "Jan 2023 - Present",
       description:
-        "Previously contributed towards research concerning attacking and defending graph neural networks and exploring novel techniques to better model graph behaviors. Currently assisting with research concerning hypothesis generation and new adversarial learning techniques.\n Awards: Dean Summer Undergraduate Research Fellow",
+        "Previously contributed towards research concerning attacking and defending graph neural networks and exploring novel techniques to better model graph behaviors. Currently assisting with research concerning hypothesis generation and new adversarial learning techniques.\n Awards: Dean Summer Undergraduate Research Fellow\n Recent Publication: IdeaBench: Benchmarking Large Language Models for Research Idea Generation",
       type: "work",
       logo: "/uva.png",
     },
@@ -67,7 +67,7 @@ const Timeline = () => {
       company: "University of Virginia | 3.97 GPA",
       date: "Aug 2022 - May 2025",
       description:
-        "Minored in Data Science and graduated with highest honors.\nCoursework: Operating Systems, Database Systems, Compilers, Programming Languages, \nMachine Learning, Reinforcement Learning, Computer Systems and Organization 2, \nAdvanced Software Dev. Essentials",
+        "Minored in Data Science and graduated with highest honors.\nCoursework: Operating Systems, Database Systems, Compilers, Programming Languages, Machine Learning, Reinforcement Learning, Computer Systems and Organization 2, Advanced Software Dev. Essentials",
       type: "education",
       logo: "/uva.png",
     },
@@ -156,6 +156,22 @@ const Timeline = () => {
                             </span>
                             <span className="ml-1">
                               {line.trim().replace(/^Awards?:\s*/, "")}
+                            </span>
+                          </span>
+                        ) : line.trim().startsWith("Recent Publication:") ? (
+                          <span>
+                            <span className="font-medium text-[#2F4156]">
+                              Recent Publication:
+                            </span>
+                            <span className="ml-1">
+                              <a 
+                                href="https://dl.acm.org/doi/10.1145/3711896.3737419" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                className="text-link hover:underline"
+                              >
+                                {line.trim().replace(/^Recent Publication:\s*/, "")}
+                              </a>
                             </span>
                           </span>
                         ) : (
