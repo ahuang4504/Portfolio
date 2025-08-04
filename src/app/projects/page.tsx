@@ -11,6 +11,23 @@ export default function Projects() {
       featured: true,
     },
     {
+      title: "NotaIQ",
+      description:
+        "Made to solve the problem of passive note-taking, NotaIQ transforms your personal knowledge base into an active learning tool. Notes are first ingested into a graph knowledge store that intelligently connects concepts across your Obsidian vault. NotaIQ then integrates with conversational models via MCP to let you request assessments on any topic, synthesizing these relationships and generating questions that improve retention and understanding.",
+      tech: [
+        "Go",
+        "Neo4j",
+        "MCP",
+        "GraphRAG",
+        "Claude API",
+        "Google Gemini",
+        "TypeScript",
+      ],
+      github: "https://github.com/ahuang4504/NotaIQ",
+      demo: null,
+      featured: true,
+    },
+    {
       title: "Portfolio Website",
       description:
         "A modern, responsive portfolio about me and my technical projects! Features dynamic content including real-time Spotify integration, interactive photo gallery, and custom Connections game. Built with performance optimization and mobile-first responsive design principles.",
@@ -230,6 +247,12 @@ export default function Projects() {
                           PeerCycle
                         </span>
                       </div>
+                    ) : project.title === "NotaIQ" ? (
+                      <img
+                        src="/notaiq.png"
+                        alt="NotaIQ"
+                        className="w-full h-full object-contain"
+                      />
                     ) : project.title === "Portfolio Website" ? (
                       <img
                         src="/website.svg"
